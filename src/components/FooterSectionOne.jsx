@@ -111,8 +111,8 @@ const FooterSectionOne = () => {
                 </h2>
                 <ul data-aos='fade-up' data-aos-delay='300'>
                   <li>м. Київ, вул. Хрещатик, 1</li>
-                  <li>info@facontech.com</li>
-                  <li className='phone'>+38 (044) 123-45-67</li>
+                  <li>ladiginscormag@gmail.com</li>
+                  <li className='phone'>+38 (098) 947-87-23</li>
                 </ul>
               </div>
             </div>
@@ -124,7 +124,7 @@ const FooterSectionOne = () => {
                 data-aos='fade-up'
                 data-aos-delay='300'
               >
-                <p>Copyright © 2024 FaconTech, Всі права захищені.</p>
+                <p>Copyright © 2025 WebTech, Всі права захищені.</p>
               </div>
             </div>
           </div>
