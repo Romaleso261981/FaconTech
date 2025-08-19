@@ -31,7 +31,7 @@ const ProjectSectionOne = () => {
                 <div className='img-file por'>
                   <img
                     className='img-fluid'
-                    src='/assets/img/project/01_project.png'
+                    src='/assets/img/project-new/01_project.png'
                     alt='FaconTech'
                   />
                   <div className='shape-overlay poa'>
@@ -60,7 +60,7 @@ const ProjectSectionOne = () => {
                 <div className='img-file por'>
                   <img
                     className='img-fluid'
-                    src='/assets/img/project/02_project.png'
+                    src='/assets/img/project-new/02_project.png'
                     alt='FaconTech'
                   />
                   <div className='shape-overlay poa'>
@@ -89,7 +89,7 @@ const ProjectSectionOne = () => {
                 <div className='img-file por'>
                   <img
                     className='img-fluid'
-                    src='/assets/img/project/03_project.png'
+                    src='/assets/img/project-new/02_project.png'
                     alt='FaconTech'
                   />
                   <div className='shape-overlay poa'>
@@ -118,7 +118,7 @@ const ProjectSectionOne = () => {
                 <div className='img-file por'>
                   <img
                     className='img-fluid'
-                    src='/assets/img/project/04_project.png'
+                    src='/assets/img/project-new/01_project.png'
                     alt='FaconTech'
                   />
                   <div className='shape-overlay poa'>

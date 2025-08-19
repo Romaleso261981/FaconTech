@@ -73,7 +73,7 @@ const TeamSectionOne = () => {
                         <div className='img-file'>
                           <img
                             className='img-fluid'
-                            src='/assets/img/team/01_team.png'
+                            src='/assets/img/team-new/adam.png'
                             alt='FaconTech'
                           />
                           <div className='shape-overlay'>
@@ -112,7 +112,7 @@ const TeamSectionOne = () => {
                         <div className='img-file'>
                           <img
                             className='img-fluid'
-                            src='/assets/img/team/02_team.png'
+                            src='/assets/img/team-new/emma.png'
                             alt='FaconTech'
                           />
                           <div className='shape-overlay'>
@@ -151,7 +151,7 @@ const TeamSectionOne = () => {
                         <div className='img-file'>
                           <img
                             className='img-fluid'
-                            src='/assets/img/team/03_team.png'
+                            src='/assets/img/team-new/ross.png'
                             alt='FaconTech'
                           />
                           <div className='shape-overlay'>
@@ -190,7 +190,7 @@ const TeamSectionOne = () => {
                         <div className='img-file'>
                           <img
                             className='img-fluid'
-                            src='/assets/img/team/04_team.png'
+                            src='/assets/img/team-new/emma.png'
                             alt='FaconTech'
                           />
                           <div className='shape-overlay'>

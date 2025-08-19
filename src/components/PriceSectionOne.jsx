@@ -17,10 +17,10 @@ const PriceSectionOne = () => {
                   <span className='theme-color'>Для вас</span>
                 </h2>
                 <p>
-                  Як ви могли прочитати в нашому посту з AI, ML та глибокого
-                  навчання, ML є підмножиною AI. Не всі системи AI навчаються з
-                  досвіду. Quis ipsum suspendisse ultrices gravida. Risus
-                  commodo.
+                  Ми пропонуємо гнучкі тарифи для розробки веб-сайтів та
+                  інтернет-магазинів. Виберіть план, який найкраще підходить для
+                  вашого бізнесу та бюджету. Всі наші рішення включають технічну
+                  підтримку та оновлення.
                 </p>
               </div>
             </div>
@@ -34,22 +34,20 @@ const PriceSectionOne = () => {
                   data-aos-delay='200'
                 >
                   <div className='price'>
-                    <h4>$</h4>
-                    <h2>49</h2>
-                    <h5>/МІСЯЦЬ</h5>
+                    <h4>₴</h4>
+                    <h2>15,000</h2>
+                    <h5>/ПРОЕКТ</h5>
                   </div>
                   <div className='plan'>
-                    <h2>Базовий план</h2>
+                    <h2>Базовий сайт</h2>
                     <div className='list'>
                       <ul>
-                        <li>Розробка мобільних застосунків</li>
-                        <li>Брендинг та ідентифікація </li>
-                        <li>Email Marketing &amp; Automation </li>
-                        <li className='deep'>E-commerce Solutions </li>
-                        <li className='deep'>
-                          Керування соціальними мережами{" "}
-                        </li>
-                        <li className='deep'>Відео та анімація</li>
+                        <li>Лендінг-сторінка або простий сайт</li>
+                        <li>Адаптивний дизайн для всіх пристроїв</li>
+                        <li>Базове SEO-налаштування</li>
+                        <li className='deep'>Форма зворотного зв'язку</li>
+                        <li className='deep'>Базова аналітика та інтеграція</li>
+                        <li className='deep'>Технічна підтримка 3 місяці</li>
                       </ul>
                     </div>
                   </div>
@@ -62,20 +60,20 @@ const PriceSectionOne = () => {
                   data-aos-delay='300'
                 >
                   <div className='price'>
-                    <h4>$</h4>
-                    <h2>59</h2>
-                    <h5>/МІСЯЦЬ</h5>
+                    <h4>₴</h4>
+                    <h2>35,000</h2>
+                    <h5>/ПРОЕКТ</h5>
                   </div>
                   <div className='plan'>
-                    <h2>Оптимальний план</h2>
+                    <h2>Інтернет-магазин</h2>
                     <div className='list'>
                       <ul>
-                        <li>Розробка мобільних застосунків</li>
-                        <li>Брендинг та ідентифікація </li>
-                        <li>Email Marketing &amp; Automation </li>
-                        <li>E-commerce Solutions </li>
-                        <li>Керування соціальними мережами </li>
-                        <li className='deep'>Відео та анімація</li>
+                        <li>Повнофункціональний інтернет-магазин</li>
+                        <li>WordPress + WooCommerce або Next.js</li>
+                        <li>Система оплати та доставки</li>
+                        <li>Управління товарами та категоріями</li>
+                        <li>SEO-оптимізація та маркетинг</li>
+                        <li className='deep'>Технічна підтримка 6 місяців</li>
                       </ul>
                     </div>
                   </div>
@@ -88,20 +86,20 @@ const PriceSectionOne = () => {
                   data-aos-delay='400'
                 >
                   <div className='price'>
-                    <h4>$</h4>
-                    <h2>99</h2>
-                    <h5>/МІСЯЦЬ</h5>
+                    <h4>₴</h4>
+                    <h2>75,000</h2>
+                    <h5>/ПРОЕКТ</h5>
                   </div>
                   <div className='plan'>
-                    <h2>Срібний план</h2>
+                    <h2>Корпоративний портал</h2>
                     <div className='list'>
                       <ul>
-                        <li>Розробка мобільних застосунків</li>
-                        <li>Branding &amp; Identity </li>
-                        <li>Email Marketing &amp; Automation </li>
-                        <li>E-commerce Solutions </li>
-                        <li>Керування соціальними мережами </li>
-                        <li>Відео та анімація </li>
+                        <li>Складний корпоративний сайт</li>
+                        <li>Інтеграція з CRM та ERP системами</li>
+                        <li>Мультимовність та локалізація</li>
+                        <li>Розширена аналітика та звітність</li>
+                        <li>API розробка та інтеграція</li>
+                        <li>Технічна підтримка 12 місяців</li>
                       </ul>
                     </div>
                   </div>

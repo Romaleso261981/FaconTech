@@ -8,7 +8,7 @@ const Breadcrumb = ({ data }) => {
       <section
         className='breadcrumb'
         style={{
-          backgroundImage: "url('/assets/img/bg-image/02_bg-image.png')",
+          backgroundImage: "url('/assets/img/bg-image/05_bg-image.jpg')",
         }}
       >
         <div className='auto-container'>

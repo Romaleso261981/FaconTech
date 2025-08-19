@@ -30,7 +30,7 @@ const FAQSectionOne = () => {
               >
                 <img
                   className='img-fluid'
-                  src='/assets/img/tech/01_tech.png'
+                  src='/assets/img/tech-new/01_tech.png'
                   alt='FaconTech'
                 />
               </div>

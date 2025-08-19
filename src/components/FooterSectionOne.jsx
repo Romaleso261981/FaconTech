@@ -4,141 +4,141 @@ const FooterSectionOne = () => {
   return (
     <>
       {/* footer section one start */}
-      <footer className="footer-section one">
-        <div className="auto-container">
-          <div className="row">
-            <div className="col-lg-5 col-md-6 col-12">
-              <div className="footer-wrapper one">
-                <div className="logo" data-aos="fade-up" data-aos-delay="200">
+      <footer className='footer-section one'>
+        <div className='auto-container'>
+          <div className='row'>
+            <div className='col-lg-5 col-md-6 col-12'>
+              <div className='footer-wrapper one'>
+                <div className='logo' data-aos='fade-up' data-aos-delay='200'>
                   <img
-                    src="/assets/img/common/logo-white.png"
-                    alt="FaconTech"
+                    src='/assets/img/common/logo-white.png'
+                    alt='FaconTech'
                   />
                 </div>
-                <div className="des" data-aos="fade-up" data-aos-delay="300">
+                <div className='des' data-aos='fade-up' data-aos-delay='300'>
                   <p>
-                    Artificial intelligence is intelligence demonstrated by
-                    machines, as opposed to intelligence of humans and other
-                    animals. Example tasks in which this is done include speech
-                    recognition, computer vision, translation between languages,
-                    as well as other mappings of inputs.
+                    FaconTech - це компанія, яка спеціалізується на створенні
+                    сучасних веб-сайтів та інтернет-магазинів. Ми використовуємо
+                    найновіші технології Next.js та WordPress для розробки
+                    швидких, адаптивних та функціональних рішень для вашого
+                    бізнесу.
                   </p>
                 </div>
                 <div
-                  className="social one"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
+                  className='social one'
+                  data-aos='fade-up'
+                  data-aos-delay='400'
                 >
-                  <Link href="#">
-                    <i className="fa-brands fa-facebook-f" />
+                  <Link href='#'>
+                    <i className='fa-brands fa-facebook-f' />
                   </Link>
-                  <Link href="#">
-                    <i className="fa-brands fa-twitter" />
+                  <Link href='#'>
+                    <i className='fa-brands fa-twitter' />
                   </Link>
-                  <Link href="#">
-                    <i className="fa-brands fa-linkedin-in" />
+                  <Link href='#'>
+                    <i className='fa-brands fa-linkedin-in' />
                   </Link>
-                  <Link href="#">
-                    <i className="fa-brands fa-instagram" />
+                  <Link href='#'>
+                    <i className='fa-brands fa-instagram' />
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-lg-2 col-md-6 col-12">
-              <div className="footer-wrapper two mt-4 mt-md-0">
-                <h2 className="title" data-aos="fade-up" data-aos-delay="200">
-                  Quick Link
+            <div className='col-lg-2 col-md-6 col-12'>
+              <div className='footer-wrapper two mt-4 mt-md-0'>
+                <h2 className='title' data-aos='fade-up' data-aos-delay='200'>
+                  Швидкі посилання
                 </h2>
-                <ul data-aos="fade-up" data-aos-delay="300">
+                <ul data-aos='fade-up' data-aos-delay='300'>
                   <li>
-                    <Link href="#">About Us</Link>
+                    <Link href='#'>Про нас</Link>
                   </li>
                   <li>
-                    <Link href="#">Services</Link>
+                    <Link href='#'>Послуги</Link>
                   </li>
                   <li>
-                    <Link href="#">Blog</Link>
+                    <Link href='#'>Блог</Link>
                   </li>
                   <li>
-                    <Link href="#">Pricing Plan</Link>
+                    <Link href='#'>Тарифні плани</Link>
                   </li>
                   <li>
-                    <Link href="#">Our Team</Link>
+                    <Link href='#'>Наша команда</Link>
                   </li>
                   <li>
-                    <Link href="#">All Projects</Link>
+                    <Link href='#'>Всі проекти</Link>
                   </li>
                   <li>
-                    <Link href="#">Contact</Link>
+                    <Link href='#'>Контакти</Link>
                   </li>
                   <li>
-                    <Link href="#">Trams &amp; Condition</Link>
+                    <Link href='#'>Умови та положення</Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-lg-2 col-md-6 col-12">
-              <div className="footer-wrapper two mt-4 mt-lg-0 ">
-                <h2 className="title" data-aos="fade-up" data-aos-delay="200">
-                  IT Service
+            <div className='col-lg-2 col-md-6 col-12'>
+              <div className='footer-wrapper two mt-4 mt-lg-0 '>
+                <h2 className='title' data-aos='fade-up' data-aos-delay='200'>
+                  Веб-послуги
                 </h2>
-                <ul data-aos="fade-up" data-aos-delay="300">
+                <ul data-aos='fade-up' data-aos-delay='300'>
                   <li>
-                    <Link href="#">Credit industry</Link>
+                    <Link href='#'>Розробка сайтів</Link>
                   </li>
                   <li>
-                    <Link href="#">Research sector</Link>
+                    <Link href='#'>Інтернет-магазини</Link>
                   </li>
                   <li>
-                    <Link href="#">Finance Sector</Link>
+                    <Link href='#'>Корпоративні портали</Link>
                   </li>
                   <li>
-                    <Link href="#">Credit industry</Link>
+                    <Link href='#'>E-commerce рішення</Link>
                   </li>
                   <li>
-                    <Link href="#">AI Research</Link>
+                    <Link href='#'>WordPress розробка</Link>
                   </li>
                   <li>
-                    <Link href="#">ICT industry</Link>
+                    <Link href='#'>Next.js розробка</Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-12">
-              <div className="footer-wrapper three mt-4 mt-lg-0">
-                <h2 className="title" data-aos="fade-up" data-aos-delay="200">
-                  Contact Us
+            <div className='col-lg-3 col-md-6 col-12'>
+              <div className='footer-wrapper three mt-4 mt-lg-0'>
+                <h2 className='title' data-aos='fade-up' data-aos-delay='200'>
+                  Зв'яжіться з нами
                 </h2>
-                <ul data-aos="fade-up" data-aos-delay="300">
-                  <li>3487 Harter StreetDayton, OH 45402</li>
-                  <li>info@demo.com</li>
-                  <li className="phone">+ (008)-345-6789</li>
+                <ul data-aos='fade-up' data-aos-delay='300'>
+                  <li>м. Київ, вул. Хрещатик, 1</li>
+                  <li>info@facontech.com</li>
+                  <li className='phone'>+38 (044) 123-45-67</li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-12">
+          <div className='row'>
+            <div className='col-12'>
               <div
-                className="footer-bottom"
-                data-aos="fade-up"
-                data-aos-delay="300"
+                className='footer-bottom'
+                data-aos='fade-up'
+                data-aos-delay='300'
               >
-                <p>Copyright © 2023 FaconTech, All Rights Reserved.</p>
+                <p>Copyright © 2024 FaconTech, Всі права захищені.</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="shape-image">
+        <div className='shape-image'>
           <img
-            className="shape-1 poa"
-            src="/assets/img/icon/26_icon.png"
-            alt="FaconTech"
+            className='shape-1 poa'
+            src='/assets/img/icon/26_icon.png'
+            alt='FaconTech'
           />
           <img
-            className="shape-2 poa"
-            src="/assets/img/shape/08_shape.png"
-            alt="FaconTech"
+            className='shape-2 poa'
+            src='/assets/img/shape/08_shape.png'
+            alt='FaconTech'
           />
         </div>
       </footer>

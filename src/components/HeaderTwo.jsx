@@ -60,52 +60,52 @@ const HeaderTwo = () => {
     <>
       <>
         {/* header-area-start */}
-        <header className="header-intro-version-one-area header-area-2">
-          <div className="header-top d-none d-lg-block">
-            <div className="auto-container">
-              <div className="row">
-                <div className="col-lg-7">
-                  <div className="left-wrapper">
-                    <div className="item">
-                      <span className="theme-color">
-                        <i className="fa-solid fa-envelope" />
+        <header className='header-intro-version-one-area header-area-2'>
+          <div className='header-top d-none d-lg-block'>
+            <div className='auto-container'>
+              <div className='row'>
+                <div className='col-lg-7'>
+                  <div className='left-wrapper'>
+                    <div className='item'>
+                      <span className='theme-color'>
+                        <i className='fa-solid fa-envelope' />
                       </span>
                       <span>info@yourdomain.com</span>
                     </div>
-                    <div className="item">
-                      <span className="theme-color">
-                        <i className="fa-solid fa-phone-arrow-up-right" />
+                    <div className='item'>
+                      <span className='theme-color'>
+                        <i className='fa-solid fa-phone-arrow-up-right' />
                       </span>
                       <span>(0215) 2658 12547</span>
                     </div>
-                    <div className="item">
-                      <span className="theme-color">
-                        <i className="fa-sharp fa-solid fa-location-dot" />
+                    <div className='item'>
+                      <span className='theme-color'>
+                        <i className='fa-sharp fa-solid fa-location-dot' />
                       </span>
                       <span>Lane Mission New York</span>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-5">
-                  <div className="right-wrapper">
-                    <div className="item">
-                      <span className="theme-color">
-                        <i className="fa-solid fa-timer" />
+                <div className='col-lg-5'>
+                  <div className='right-wrapper'>
+                    <div className='item'>
+                      <span className='theme-color'>
+                        <i className='fa-solid fa-timer' />
                       </span>
                       <span>Office Hours: 09:00am-6:00pm</span>
                     </div>
-                    <div className="item social">
-                      <Link href="#">
-                        <i className="fa-brands fa-facebook" />
+                    <div className='item social'>
+                      <Link href='#'>
+                        <i className='fa-brands fa-facebook' />
                       </Link>
-                      <Link href="#">
-                        <i className="fa-brands fa-twitter" />
+                      <Link href='#'>
+                        <i className='fa-brands fa-twitter' />
                       </Link>
-                      <Link href="#">
-                        <i className="fa-brands fa-linkedin-in" />
+                      <Link href='#'>
+                        <i className='fa-brands fa-linkedin-in' />
                       </Link>
-                      <Link href="#">
-                        <i className="fa-brands fa-instagram" />
+                      <Link href='#'>
+                        <i className='fa-brands fa-instagram' />
                       </Link>
                     </div>
                   </div>
@@ -115,29 +115,29 @@ const HeaderTwo = () => {
           </div>
           <div
             className={scroll ? "header-inner header__sticky" : "header-inner"}
-            id="header-sticky-2"
+            id='header-sticky-2'
           >
-            <div className="auto-container">
-              <div className="row align-items-center">
-                <div className=" col-lg-3 col-md-6 col-6">
-                  <div className="logo-area">
-                    <div className="logo">
-                      <Link href="home-2">
+            <div className='auto-container'>
+              <div className='row align-items-center'>
+                <div className=' col-lg-3 col-md-6 col-6'>
+                  <div className='logo-area'>
+                    <div className='logo'>
+                      <Link href='home-2'>
                         <img
-                          className="img-fluid"
-                          src="assets/img/common/logo-white.png"
-                          alt="FaconTech"
+                          className='img-fluid'
+                          src='assets/img/common/logo-white.png'
+                          alt='FaconTech'
                         />
                       </Link>
                     </div>
                   </div>
                 </div>
-                <div className=" col-lg-7 col-md-6 col-6">
-                  <div className="  menu-area menu-padding d-none d-lg-block">
-                    <div className="main-menu">
+                <div className=' col-lg-7 col-md-6 col-6'>
+                  <div className='  menu-area menu-padding d-none d-lg-block'>
+                    <div className='main-menu'>
                       <nav>
                         <ul>
-                          <li className="has-dropdown">
+                          {/* <li className="has-dropdown">
                             <Link href="#">Home</Link>
                             <ul className="sub-menu">
                               <li>
@@ -171,21 +171,21 @@ const HeaderTwo = () => {
                                 </Link>
                               </li>
                             </ul>
-                          </li>
+                          </li> */}
                           <li>
                             <Link
-                              href="/about"
+                              href='/about'
                               className={router === "/about" ? "active" : ""}
                             >
                               About Us
                             </Link>
                           </li>
-                          <li className="has-dropdown">
-                            <Link href="#">Pages</Link>
-                            <ul className="sub-menu">
+                          <li className='has-dropdown'>
+                            <Link href='#'>Pages</Link>
+                            <ul className='sub-menu'>
                               <li>
                                 <Link
-                                  href="/team"
+                                  href='/team'
                                   className={router === "/team" ? "active" : ""}
                                 >
                                   Team
@@ -193,7 +193,7 @@ const HeaderTwo = () => {
                               </li>
                               <li>
                                 <Link
-                                  href="/project"
+                                  href='/project'
                                   className={
                                     router === "/project" ? "active" : ""
                                   }
@@ -203,7 +203,7 @@ const HeaderTwo = () => {
                               </li>
                               <li>
                                 <Link
-                                  href="/project-details"
+                                  href='/project-details'
                                   className={
                                     router === "/project-details"
                                       ? "active"
@@ -215,7 +215,7 @@ const HeaderTwo = () => {
                               </li>
                               <li>
                                 <Link
-                                  href="/service"
+                                  href='/service'
                                   className={
                                     router === "/service" ? "active" : ""
                                   }
@@ -225,7 +225,7 @@ const HeaderTwo = () => {
                               </li>
                               <li>
                                 <Link
-                                  href="/service-details"
+                                  href='/service-details'
                                   className={
                                     router === "/service-details"
                                       ? "active"
@@ -237,7 +237,7 @@ const HeaderTwo = () => {
                               </li>
                               <li>
                                 <Link
-                                  href="/pricing"
+                                  href='/pricing'
                                   className={
                                     router === "/pricing" ? "active" : ""
                                   }
@@ -247,7 +247,7 @@ const HeaderTwo = () => {
                               </li>
                               <li>
                                 <Link
-                                  href="/review"
+                                  href='/review'
                                   className={
                                     router === "/review" ? "active" : ""
                                   }
@@ -257,23 +257,23 @@ const HeaderTwo = () => {
                               </li>
                               <li>
                                 <Link
-                                  href="/faq"
+                                  href='/faq'
                                   className={router === "/faq" ? "active" : ""}
                                 >
                                   FAQ
                                 </Link>
                               </li>
                               <li>
-                                <Link href="/404">404 Page</Link>
+                                <Link href='/404'>404 Page</Link>
                               </li>
                             </ul>
                           </li>
-                          <li className="has-dropdown">
-                            <Link href="#">Blog</Link>
-                            <ul className="sub-menu">
+                          <li className='has-dropdown'>
+                            <Link href='#'>Blog</Link>
+                            <ul className='sub-menu'>
                               <li>
                                 <Link
-                                  href="/blog-grid"
+                                  href='/blog-grid'
                                   className={
                                     router === "/blog-grid" ? "active" : ""
                                   }
@@ -283,7 +283,7 @@ const HeaderTwo = () => {
                               </li>
                               <li>
                                 <Link
-                                  href="/blog-grid-sidebar"
+                                  href='/blog-grid-sidebar'
                                   className={
                                     router === "/blog-grid-sidebar"
                                       ? "active"
@@ -295,7 +295,7 @@ const HeaderTwo = () => {
                               </li>
                               <li>
                                 <Link
-                                  href="/blog-list"
+                                  href='/blog-list'
                                   className={
                                     router === "/blog-list" ? "active" : ""
                                   }
@@ -305,7 +305,7 @@ const HeaderTwo = () => {
                               </li>
                               <li>
                                 <Link
-                                  href="/blog-details"
+                                  href='/blog-details'
                                   className={
                                     router === "/blog-details" ? "active" : ""
                                   }
@@ -317,7 +317,7 @@ const HeaderTwo = () => {
                           </li>
                           <li>
                             <Link
-                              href="/contact"
+                              href='/contact'
                               className={router === "/contact" ? "active" : ""}
                             >
                               Contact
@@ -327,23 +327,23 @@ const HeaderTwo = () => {
                       </nav>
                     </div>
                   </div>
-                  <div className="side-menu-icon d-lg-none text-end">
+                  <div className='side-menu-icon d-lg-none text-end'>
                     <Link
-                      href="#"
-                      className="info-toggle-btn f-right sidebar-toggle-btn"
+                      href='#'
+                      className='info-toggle-btn f-right sidebar-toggle-btn'
                       onClick={mobileMenu}
                     >
-                      <i className="fal fa-bars" />
+                      <i className='fal fa-bars' />
                     </Link>
                   </div>
                 </div>
-                <div className=" col-lg-2 d-none d-lg-block">
-                  <div className="trigger">
+                <div className=' col-lg-2 d-none d-lg-block'>
+                  <div className='trigger'>
                     <span onClick={searchFun}>
-                      <i className="fa-regular fa-magnifying-glass " />
+                      <i className='fa-regular fa-magnifying-glass ' />
                     </span>
-                    <span className="sidebar-toggle" onClick={rightSide}>
-                      <i className="fa-solid fa-bars-sort " />
+                    <span className='sidebar-toggle' onClick={rightSide}>
+                      <i className='fa-solid fa-bars-sort ' />
                     </span>
                   </div>
                 </div>
@@ -361,17 +361,17 @@ const HeaderTwo = () => {
             search === true ? " fade search-box show" : " fade search-box"
           }
         >
-          <button className="close" onClick={searchFun}>
-            <span aria-hidden="true">
-              <i className="fa-sharp fa-regular fa-xmark" />
+          <button className='close' onClick={searchFun}>
+            <span aria-hidden='true'>
+              <i className='fa-sharp fa-regular fa-xmark' />
             </span>
           </button>
-          <div className="modal-dialog">
-            <div className="modal-content">
+          <div className='modal-dialog'>
+            <div className='modal-content'>
               <form>
-                <input type="text" placeholder="Search here..." />
+                <input type='text' placeholder='Search here...' />
                 <button>
-                  <i className="fa fa-search" />
+                  <i className='fa fa-search' />
                 </button>
               </form>
             </div>
@@ -384,38 +384,38 @@ const HeaderTwo = () => {
       <div
         className={`sidebar__area ${active === true ? "sidebar-opened" : ""} `}
       >
-        <div className="sidebar__wrapper">
-          <div className="sidebar__close">
+        <div className='sidebar__wrapper'>
+          <div className='sidebar__close'>
             <button
-              className="sidebar__close-btn"
-              id="sidebar__close-btn"
+              className='sidebar__close-btn'
+              id='sidebar__close-btn'
               onClick={mobileMenu}
             >
-              <i className="fal fa-times" />
+              <i className='fal fa-times' />
             </button>
           </div>
-          <div className="sidebar__content">
-            <div className="sidebar-logo mb-40 mt-40">
-              <Link href="home-1">
-                <img src="assets/img/common/logo-white.png" alt="logo" />
+          <div className='sidebar__content'>
+            <div className='sidebar-logo mb-40 mt-40'>
+              <Link href='home-1'>
+                <img src='assets/img/common/logo-white.png' alt='logo' />
               </Link>
             </div>
-            <div className="sidebar__search mb-25">
-              <form action="#">
-                <input type="text" placeholder="What are you searching for?" />
-                <button type="submit">
-                  <i className="far fa-search" />
+            <div className='sidebar__search mb-25'>
+              <form action='#'>
+                <input type='text' placeholder='What are you searching for?' />
+                <button type='submit'>
+                  <i className='far fa-search' />
                 </button>
               </form>
             </div>
-            <nav className="offcanvas-navigation" id="offcanvas-navigation">
+            <nav className='offcanvas-navigation' id='offcanvas-navigation'>
               <ul>
-                <li className="menu-item-has-children">
-                  <Link href="#">Home</Link>
-                  <ul className="sub-menu">
-                    <li className="active">
+                <li className='menu-item-has-children'>
+                  <Link href='#'>Home</Link>
+                  <ul className='sub-menu'>
+                    <li className='active'>
                       <Link
-                        href="/home-1"
+                        href='/home-1'
                         className={router === "/home-1" ? "active" : ""}
                       >
                         Home One
@@ -423,7 +423,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/home-2"
+                        href='/home-2'
                         className={router === "/home-2" ? "active" : ""}
                       >
                         Home Two
@@ -431,7 +431,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/home-3"
+                        href='/home-3'
                         className={router === "/home-3" ? "active" : ""}
                       >
                         Home Three
@@ -441,18 +441,18 @@ const HeaderTwo = () => {
                 </li>
                 <li>
                   <Link
-                    href="/about"
+                    href='/about'
                     className={router === "/about" ? "active" : ""}
                   >
                     About Us
                   </Link>
                 </li>
-                <li className="menu-item-has-children">
-                  <Link href="#">Pages</Link>
-                  <ul className="sub-menu">
+                <li className='menu-item-has-children'>
+                  <Link href='#'>Pages</Link>
+                  <ul className='sub-menu'>
                     <li>
                       <Link
-                        href="/team"
+                        href='/team'
                         className={router === "/team" ? "active" : ""}
                       >
                         Team
@@ -460,7 +460,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/project"
+                        href='/project'
                         className={router === "/project" ? "active" : ""}
                       >
                         Project
@@ -468,7 +468,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/project-details"
+                        href='/project-details'
                         className={
                           router === "/project-details" ? "active" : ""
                         }
@@ -478,7 +478,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/service"
+                        href='/service'
                         className={router === "/service" ? "active" : ""}
                       >
                         Service
@@ -486,7 +486,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/service-details"
+                        href='/service-details'
                         className={
                           router === "/service-details" ? "active" : ""
                         }
@@ -496,7 +496,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/pricing"
+                        href='/pricing'
                         className={router === "/pricing" ? "active" : ""}
                       >
                         Pricing
@@ -504,7 +504,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/review"
+                        href='/review'
                         className={router === "/review" ? "active" : ""}
                       >
                         Review
@@ -512,23 +512,23 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/faq"
+                        href='/faq'
                         className={router === "/faq" ? "active" : ""}
                       >
                         FAQ
                       </Link>
                     </li>
                     <li>
-                      <Link href="/error">404 Page</Link>
+                      <Link href='/error'>404 Page</Link>
                     </li>
                   </ul>
                 </li>
-                <li className="has-dropdown">
-                  <Link href="#">Blog</Link>
-                  <ul className="sub-menu">
+                <li className='has-dropdown'>
+                  <Link href='#'>Blog</Link>
+                  <ul className='sub-menu'>
                     <li>
                       <Link
-                        href="/blog-grid"
+                        href='/blog-grid'
                         className={router === "/blog-grid" ? "active" : ""}
                       >
                         Blog-Grid
@@ -536,7 +536,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/blog-grid-sidebar"
+                        href='/blog-grid-sidebar'
                         className={
                           router === "/blog-grid-sidebar" ? "active" : ""
                         }
@@ -546,7 +546,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/blog-list"
+                        href='/blog-list'
                         className={router === "/blog-list" ? "active" : ""}
                       >
                         Blog-List
@@ -554,7 +554,7 @@ const HeaderTwo = () => {
                     </li>
                     <li>
                       <Link
-                        href="/blog-details"
+                        href='/blog-details'
                         className={router === "/blog-details" ? "active" : ""}
                       >
                         Blog Details
@@ -564,7 +564,7 @@ const HeaderTwo = () => {
                 </li>
                 <li>
                   <Link
-                    href="/contact"
+                    href='/contact'
                     className={router === "/contact" ? "active" : ""}
                   >
                     Contact
@@ -573,45 +573,45 @@ const HeaderTwo = () => {
               </ul>
             </nav>
 
-            <div className="mobile-footer">
-              <div className="follow">
-                <div className="title">
+            <div className='mobile-footer'>
+              <div className='follow'>
+                <div className='title'>
                   <h3>Follow Us:</h3>
                 </div>
-                <div className="social one">
-                  <Link href="#">
-                    <i className="fa-brands fa-facebook-f" />
+                <div className='social one'>
+                  <Link href='#'>
+                    <i className='fa-brands fa-facebook-f' />
                   </Link>
-                  <Link href="#">
-                    <i className="fa-brands fa-twitter" />
+                  <Link href='#'>
+                    <i className='fa-brands fa-twitter' />
                   </Link>
-                  <Link href="#">
-                    <i className="fa-brands fa-linkedin-in" />
+                  <Link href='#'>
+                    <i className='fa-brands fa-linkedin-in' />
                   </Link>
-                  <Link href="#">
-                    <i className="fa-brands fa-instagram" />
+                  <Link href='#'>
+                    <i className='fa-brands fa-instagram' />
                   </Link>
                 </div>
               </div>
-              <div className="contact">
-                <div className="title">
+              <div className='contact'>
+                <div className='title'>
                   <h3>Contact Us:</h3>
                 </div>
                 <ul>
                   <li>
-                    <i className="fa-sharp fa-solid fa-location-dot" />
+                    <i className='fa-sharp fa-solid fa-location-dot' />
                     1739 Kincheloe Road Portland, OR 97205
                   </li>
                   <li>
-                    <i className="fa-solid fa-envelope" />
+                    <i className='fa-solid fa-envelope' />
                     info@demo.com
                   </li>
                   <li>
-                    <i className="fa-solid fa-phone" />
+                    <i className='fa-solid fa-phone' />
                     +88 632-528-(859)
                   </li>
                   <li>
-                    <i className="fa-regular fa-globe" />
+                    <i className='fa-regular fa-globe' />
                     themesoft69.com
                   </li>
                 </ul>
@@ -630,13 +630,13 @@ const HeaderTwo = () => {
               : "sidebar-right"
           }
         >
-          <div className="wrapper">
-            <div className="title">
-              <div className="logo">
+          <div className='wrapper'>
+            <div className='title'>
+              <div className='logo'>
                 <img
-                  className="img-fluid"
-                  src="/assets/img/common/logo-black.png"
-                  alt="FaconTech"
+                  className='img-fluid'
+                  src='/assets/img/common/logo-black.png'
+                  alt='FaconTech'
                 />
               </div>
               <p>
@@ -646,45 +646,45 @@ const HeaderTwo = () => {
                 operations.
               </p>
             </div>
-            <div className="intro-text">
-              <div className="title-text">
+            <div className='intro-text'>
+              <div className='title-text'>
                 <h3>Gallery</h3>
               </div>
-              <div className="img-file">
+              <div className='img-file'>
                 <img
-                  className="img-fluid"
-                  src="/assets/img/project/01_project.png"
-                  alt="FaconTech"
+                  className='img-fluid'
+                  src='/assets/img/project/01_project.png'
+                  alt='FaconTech'
                 />
                 <img
-                  className="img-fluid"
-                  src="/assets/img/project/02_project.png"
-                  alt="FaconTech"
+                  className='img-fluid'
+                  src='/assets/img/project/02_project.png'
+                  alt='FaconTech'
                 />
                 <img
-                  className="img-fluid"
-                  src="/assets/img/project/03_project.png"
-                  alt="FaconTech"
+                  className='img-fluid'
+                  src='/assets/img/project/03_project.png'
+                  alt='FaconTech'
                 />
                 <img
-                  className="img-fluid"
-                  src="/assets/img/project/04_project.png"
-                  alt="FaconTech"
+                  className='img-fluid'
+                  src='/assets/img/project/04_project.png'
+                  alt='FaconTech'
                 />
                 <img
-                  className="img-fluid"
-                  src="/assets/img/project/05_project.png"
-                  alt="FaconTech"
+                  className='img-fluid'
+                  src='/assets/img/project/05_project.png'
+                  alt='FaconTech'
                 />
                 <img
-                  className="img-fluid"
-                  src="/assets/img/project/06_project.png"
-                  alt="FaconTech"
+                  className='img-fluid'
+                  src='/assets/img/project/06_project.png'
+                  alt='FaconTech'
                 />
               </div>
             </div>
-            <div className="intro-text">
-              <div className="title-text">
+            <div className='intro-text'>
+              <div className='title-text'>
                 <h3>About FaconTech</h3>
                 <p>
                   Most people focus on the results of AI. For those of us who
@@ -694,33 +694,33 @@ const HeaderTwo = () => {
                 </p>
               </div>
             </div>
-            <div className="intro-text">
-              <div className="title-text">
+            <div className='intro-text'>
+              <div className='title-text'>
                 <h3>Need To Location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29176.030811137334!2d90.3883827!3d23.924917699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd" />
+                <iframe src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29176.030811137334!2d90.3883827!3d23.924917699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd' />
               </div>
             </div>
-            <div className="intro-text">
-              <div className="title-text">
+            <div className='intro-text'>
+              <div className='title-text'>
                 <h3>Contact Us</h3>
                 <ul>
                   <li>
-                    <i className="fa-sharp fa-solid fa-location-dot pe-1" />
+                    <i className='fa-sharp fa-solid fa-location-dot pe-1' />
                     2007 Cherry Ridge Drive Victor
                   </li>
                   <li>
-                    <i className="fa-solid fa-envelope pe-1" /> support@demo.com
+                    <i className='fa-solid fa-envelope pe-1' /> support@demo.com
                   </li>
                   <li>
-                    <i className="fa-sharp fa-solid fa-phone-volume pe-1" /> +88
+                    <i className='fa-sharp fa-solid fa-phone-volume pe-1' /> +88
                     (102)-253620
                   </li>
                   <li />
                 </ul>
               </div>
             </div>
-            <div className="close-icon sidebar-close" onClick={rightSide}>
-              <i className="fa-solid fa-xmark" />
+            <div className='close-icon sidebar-close' onClick={rightSide}>
+              <i className='fa-solid fa-xmark' />
             </div>
           </div>
         </section>

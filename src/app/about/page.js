@@ -27,7 +27,7 @@ export default function Page() {
       {/* Header one */}
       <HeaderOne />
       {/* Breadcrumb */}
-      <Breadcrumb data={"About us"} />
+      <Breadcrumb data={"Про нас"} />
       {/* About Section One */}
       <AboutSectionOne />
       {/* Counter Section One */}

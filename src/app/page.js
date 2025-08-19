@@ -1,5 +1,5 @@
 "use client";
-import React, { Fragment } from "react";
+import React from "react";
 import HeaderOne from "../components/HeaderOne";
 import Animation from "@/elements/Animation";
 import Preloader from "@/elements/Preloader";
@@ -18,7 +18,7 @@ import FooterSectionOne from "@/components/FooterSectionOne";
 
 const Demo = () => {
   return (
-    <Fragment>
+    <>
       {/* Preloader */}
       <Preloader />
 
@@ -50,7 +50,7 @@ const Demo = () => {
       <NewsSectionOne />
       {/* Footer Section One */}
       <FooterSectionOne />
-    </Fragment>
+    </>
   );
 };
 

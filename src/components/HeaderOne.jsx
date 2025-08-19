@@ -65,11 +65,11 @@ const HeaderOne = () => {
             <div className='col-xl-3 col-lg-2 col-md-6 col-6'>
               <div className='logo-area'>
                 <div className='logo'>
-                  <Link href='home-1'>
+                  <Link href='home'>
                     <img
                       className='img-fluid'
                       src='assets/img/common/logo-white.png'
-                      alt='FaconTech'
+                      alt='WebDevStudio'
                     />
                   </Link>
                 </div>
@@ -80,183 +80,28 @@ const HeaderOne = () => {
                 <div className='main-menu'>
                   <nav>
                     <ul>
-                      <li className='has-dropdown'>
-                        <Link href='home-1'>Home</Link>
-                        <ul className='sub-menu'>
-                          {/* <li>
-                            <Link
-                              href="/"
-                              className={router === "/" ? "active" : ""}
-                            >
-                              Demo
-                            </Link>
-                          </li> */}
-                          <li>
-                            <Link
-                              href='home-1'
-                              className={router === "/home-1" ? "active" : ""}
-                            >
-                              Home One
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='home-2'
-                              className={router === "/home-2" ? "active" : ""}
-                            >
-                              Home Two
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='home-3'
-                              className={router === "/home-3" ? "active" : ""}
-                            >
-                              Home Three
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
                       <li>
                         <Link
                           href='/about'
                           className={router === "/about" ? "active" : ""}
                         >
-                          About Us
+                          Про Нас
                         </Link>
                       </li>
-                      <li className='has-dropdown'>
-                        <Link href='#'>Pages</Link>
-                        <ul className='sub-menu'>
-                          <li>
-                            <Link
-                              href='/team'
-                              className={router === "/team" ? "active" : ""}
-                            >
-                              Team
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/project'
-                              className={router === "/project" ? "active" : ""}
-                            >
-                              Project
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/project-details'
-                              className={
-                                router === "/project-details" ? "active" : ""
-                              }
-                            >
-                              Project Details
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/service'
-                              className={router === "/service" ? "active" : ""}
-                            >
-                              Service
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/service-details'
-                              className={
-                                router === "/service-details" ? "active" : ""
-                              }
-                            >
-                              Service Details
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/pricing'
-                              className={router === "/pricing" ? "active" : ""}
-                            >
-                              Pricing
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/review'
-                              className={router === "/review" ? "active" : ""}
-                            >
-                              Review
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/faq'
-                              className={router === "/faq" ? "active" : ""}
-                            >
-                              FAQ
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/error'
-                              className={router === "/error" ? "active" : ""}
-                            >
-                              404 Page
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className='has-dropdown'>
-                        <Link href='#'>Blog</Link>
-                        <ul className='sub-menu'>
-                          <li>
-                            <Link
-                              href='/blog-grid'
-                              className={
-                                router === "/blog-grid" ? "active" : ""
-                              }
-                            >
-                              Blog-Grid
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/blog-grid-sidebar'
-                              className={
-                                router === "/blog-grid-sidebar" ? "active" : ""
-                              }
-                            >
-                              Blog-Grid Sidebar
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/blog-list'
-                              className={
-                                router === "/blog-list" ? "active" : ""
-                              }
-                            >
-                              Blog-List
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href='/blog-details'
-                              className={
-                                router === "/blog-details" ? "active" : ""
-                              }
-                            >
-                              Blog Details
-                            </Link>
-                          </li>
-                        </ul>
+                      <li>
+                        <Link
+                          href='/blog'
+                          className={router === "/blog-grid" ? "active" : ""}
+                        >
+                          Блог
+                        </Link>
                       </li>
                       <li>
                         <Link
                           href='/contact'
                           className={router === "/contact" ? "active" : ""}
                         >
-                          Contact
+                          Контакти
                         </Link>
                       </li>
                     </ul>
@@ -276,7 +121,7 @@ const HeaderOne = () => {
             <div className='col-xl-2 col-lg-3 d-none d-lg-block'>
               <div className='d-adjust'>
                 <Link className='default-btn' href='/contact'>
-                  Try It Free Now
+                  Замовити Сайт
                 </Link>
               </div>
             </div>
@@ -306,7 +151,7 @@ const HeaderOne = () => {
             </div>
             <div className='sidebar__search mb-25'>
               <form action='#'>
-                <input type='text' placeholder='What are you searching for?' />
+                <input type='text' placeholder='Що ви шукаєте?' />
                 <button type='submit'>
                   <i className='far fa-search' />
                 </button>
@@ -314,169 +159,28 @@ const HeaderOne = () => {
             </div>
             <nav className='offcanvas-navigation' id='offcanvas-navigation'>
               <ul>
-                <li className='menu-item-has-children'>
-                  <Link href='home-1'>Home</Link>
-                  <ul className='sub-menu'>
-                    <li className='active'>
-                      <Link
-                        href='/home-1'
-                        className={router === "/home-1" ? "active" : ""}
-                      >
-                        Home One
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/home-2'
-                        className={router === "/home-1" ? "active" : ""}
-                      >
-                        Home Two
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/home-3'
-                        className={router === "/home-1" ? "active" : ""}
-                      >
-                        Home Three
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
                 <li>
                   <Link
                     href='/about'
                     className={router === "/about" ? "active" : ""}
                   >
-                    About Us
+                    Про Нас
                   </Link>
                 </li>
-                <li className='menu-item-has-children'>
-                  <Link href='#'>Pages</Link>
-                  <ul className='sub-menu'>
-                    <li>
-                      <Link
-                        href='/team'
-                        className={router === "/team" ? "active" : ""}
-                      >
-                        Team
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/project'
-                        className={router === "/project" ? "active" : ""}
-                      >
-                        Project
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/project-details'
-                        className={
-                          router === "/project-details" ? "active" : ""
-                        }
-                      >
-                        Project Details
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/service'
-                        className={router === "/service" ? "active" : ""}
-                      >
-                        Service
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/service-details'
-                        className={
-                          router === "/service-details" ? "active" : ""
-                        }
-                      >
-                        Service Details
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/pricing'
-                        className={router === "/pricing" ? "active" : ""}
-                      >
-                        Pricing
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/review'
-                        className={router === "/review" ? "active" : ""}
-                      >
-                        Review
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/faq'
-                        className={router === "/faq" ? "active" : ""}
-                      >
-                        FAQ
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/error'
-                        className={router === "/error" ? "active" : ""}
-                      >
-                        404 Page
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
                 <li className='has-dropdown'>
-                  <Link href='#'>Blog</Link>
-                  <ul className='sub-menu'>
-                    <li>
-                      <Link
-                        href='/blog-grid'
-                        className={router === "/blog-grid" ? "active" : ""}
-                      >
-                        Blog-Grid
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/blog-grid-sidebar'
-                        className={
-                          router === "/blog-grid-sidebar" ? "active" : ""
-                        }
-                      >
-                        Blog-Grid Sidebar
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/blog-list'
-                        className={router === "/blog-list" ? "active" : ""}
-                      >
-                        Blog-List
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href='/blog-details'
-                        className={router === "/blog-details" ? "active" : ""}
-                      >
-                        Blog Details
-                      </Link>
-                    </li>
-                  </ul>
+                  <Link
+                    href='/blog'
+                    className={router === "/blog" ? "active" : ""}
+                  >
+                    Блог
+                  </Link>
                 </li>
                 <li>
                   <Link
                     href='/contact'
                     className={router === "/contact" ? "active" : ""}
                   >
-                    Contact
+                    Контакти
                   </Link>
                 </li>
               </ul>
@@ -485,7 +189,7 @@ const HeaderOne = () => {
             <div className='mobile-footer'>
               <div className='follow'>
                 <div className='title'>
-                  <h3>Follow Us:</h3>
+                  <h3>Слідкуйте за нами:</h3>
                 </div>
                 <div className='social one'>
                   <Link href='#'>
@@ -504,24 +208,24 @@ const HeaderOne = () => {
               </div>
               <div className='contact'>
                 <div className='title'>
-                  <h3>Contact Us:</h3>
+                  <h3>Зв'яжіться з нами:</h3>
                 </div>
                 <ul>
                   <li>
                     <i className='fa-sharp fa-solid fa-location-dot' />
-                    1739 Kincheloe Road Portland, OR 97205
+                    Київ, Україна
                   </li>
                   <li>
                     <i className='fa-solid fa-envelope' />
-                    info@demo.com
+                    ladiginscormag@gmail.com
                   </li>
                   <li>
                     <i className='fa-solid fa-phone' />
-                    +88 632-528-(859)
+                    +380 98 947-87-23
                   </li>
                   <li>
                     <i className='fa-regular fa-globe' />
-                    themesoft69.com
+                    webdevstudio.com
                   </li>
                 </ul>
               </div>
