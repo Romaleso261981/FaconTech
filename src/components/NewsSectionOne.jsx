@@ -19,7 +19,7 @@ const NewsSectionOne = () => {
                 data-aos-delay='300'
               >
                 <h5>Розсилка</h5>
-                <h2>
+                <h2 style={{ textTransform: "none" }}>
                   Підпишіться на розсилку <br /> та отримуйте новини про
                   веб-розробку.
                 </h2>
