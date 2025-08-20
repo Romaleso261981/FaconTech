@@ -3,7 +3,6 @@ import Link from "next/link";
 const NewsSectionOne = () => {
   return (
     <>
-      {/* News Letter One start */}
       <section
         className='news-letter one'
         style={{
@@ -59,7 +58,6 @@ const NewsSectionOne = () => {
           />
         </div>
       </section>
-      {/* News Letter One end */}
     </>
   );
 };
