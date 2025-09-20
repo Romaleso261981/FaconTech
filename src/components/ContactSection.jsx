@@ -1,41 +1,67 @@
 "use client";
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { toast, Toaster } from "react-hot-toast";
+import React, { useState } from "react";
+
 const ContactSection = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    subject: "",
+    website: "",
+    message: ""
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Please See Documentation for more information
-    emailjs
-      .sendForm(
-        "service_ljx76ce", //YOUR_SERVICE_ID
-        "template_71bgc2q", //YOUR_TEMPLATE_ID
-        form.current,
-        "cwf8kROl5o3__96Ti" //YOUR_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          if (result.text === "OK") {
-            toast.success("Massage Sent Successfully!");
-            form.current[0].value = "";
-            form.current[1].value = "";
-            form.current[2].value = "";
-            form.current[3].value = "";
-            form.current[4].value = "";
-            form.current[5].value = "";
-          }
+    setIsLoading(true);
+
+    try {
+      // Відправка через Formspree
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        (error) => {
-          if (error.text !== "OK") {
-            toast.error("Massage Not Sent!");
-          }
-        }
-      );
+        body: JSON.stringify({
+          name: formData.user_name,
+          email: formData.user_email,
+          subject: formData.subject,
+          website: formData.website,
+          message: formData.message,
+          _replyto: formData.user_email,
+          _subject: `Новий контакт з сайту FaconTech: ${formData.subject}`
+        }),
+      });
+
+      if (response.ok) {
+        alert("Дякуємо за ваше повідомлення! Ми зв'яжемося з вами найближчим часом.");
+        setFormData({
+          user_name: "",
+          user_email: "",
+          subject: "",
+          website: "",
+          message: ""
+        });
+      } else {
+        throw new Error('Помилка відправки');
+      }
+    } catch (error) {
+      console.error('Помилка:', error);
+      alert("Помилка відправки повідомлення. Спробуйте пізніше або напишіть нам на ladiginscormag@gmail.com");
+    } finally {
+      setIsLoading(false);
+    }
   };
   return (
     <>
-      <Toaster position="bottom-center" reverseOrder={false} />
       {/* Contact Section start */}
       <section className="contact-section">
         <div className="auto-container">
@@ -49,8 +75,7 @@ const ContactSection = () => {
           <div className="row">
             <div className="col-lg-8">
               <form
-                ref={form}
-                onSubmit={sendEmail}
+                onSubmit={handleSubmit}
                 id="contact-form"
                 className="contact-form"
               >
@@ -67,6 +92,8 @@ const ContactSection = () => {
                       type="text"
                       id="name"
                       name="user_name"
+                      value={formData.user_name}
+                      onChange={handleInputChange}
                       required="required"
                     />
                   </div>
@@ -82,6 +109,8 @@ const ContactSection = () => {
                       type="email"
                       id="email"
                       name="user_email"
+                      value={formData.user_email}
+                      onChange={handleInputChange}
                       required="required"
                     />
                   </div>
@@ -99,6 +128,8 @@ const ContactSection = () => {
                       type="text"
                       id="subject"
                       name="subject"
+                      value={formData.subject}
+                      onChange={handleInputChange}
                       required="required"
                     />
                   </div>
@@ -108,7 +139,13 @@ const ContactSection = () => {
                     data-aos-delay="300"
                   >
                     <label>Website</label>
-                    <input type="url" id="url" name="website" />
+                    <input 
+                      type="url" 
+                      id="url" 
+                      name="website" 
+                      value={formData.website}
+                      onChange={handleInputChange}
+                    />
                   </div>
                 </div>
                 <div
@@ -123,7 +160,9 @@ const ContactSection = () => {
                     name="message"
                     rows={8}
                     spellCheck="false"
-                    defaultValue={""}
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    required="required"
                   />
                 </div>
                 <div
@@ -133,8 +172,12 @@ const ContactSection = () => {
                 >
                   <div className="inner-btn">
                     <div>
-                      <button className="default-btn" type="submit">
-                        Send Massage
+                      <button 
+                        className="default-btn" 
+                        type="submit"
+                        disabled={isLoading}
+                      >
+                        {isLoading ? "Відправляємо..." : "Відправити повідомлення"}
                       </button>
                     </div>
                   </div>
@@ -188,7 +231,7 @@ const ContactSection = () => {
                 </div>
                 <div className="view">
                   <h3>Head Office</h3>
-                  <p>2590 Rockford Mountain Lane Four Oaks, NC.</p>
+                  <p>м. Київ, вул. Хрещатик, 1</p>
                 </div>
               </div>
             </div>
@@ -199,8 +242,7 @@ const ContactSection = () => {
                 </div>
                 <div className="view">
                   <h3>Need Support?</h3>
-                  <p>Phone: +919-963-4308</p>
-                  <p>Phone: +913-624-2047</p>
+                  <p>Phone: +38 (098) 947-87-23</p>
                 </div>
               </div>
             </div>
@@ -222,8 +264,7 @@ const ContactSection = () => {
                 </div>
                 <div className="view">
                   <h3>Email Us</h3>
-                  <p>help-dline@demo.com</p>
-                  <p>support@demo.com</p>
+                  <p>ladiginscormag@gmail.com</p>
                 </div>
               </div>
             </div>
